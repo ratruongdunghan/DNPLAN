@@ -1,107 +1,107 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="vi">
 
 <head>
-    <title>Cleanh</title>
+    <title>Trang Chủ Cleanh</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
 
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
     <style>
+        body {
+            background-image: url("https://lh3.googleusercontent.com/lrNVg6kGbiqDOGQW1cot7U4R6rFnHyObPGGtGzxrcZi4aOlKV8RqozI5jypsPrftHQ44DEuBBymJ3PoLeYMRvteuMvz1KjSR88-mxIBRb1oVA466JSvkks21lSmGqiYZXreCMjAvuLnvC1tEvH6n29qDpn8yho4ZwCN0OZHVTkV28jQnXba3j7EGDGxL9i-ke6QrXYiclsf0uVZ943gTlATnIsxYyzVcxVXNhJ52VkwBuytGPsOcq4dFJgkwPSnx4Vc0F3dPSYghhfCcLouSkfgD09WblCAGeaLmYkwsXBjtWLkwnKgWAIGo0YdA79RSLnvSNG62ZRXEgG0zvdPFAszXmgrNBKWL3y36BlSifGcEKeZzLnlMVcxR6USJEr0Zz4wH9d1AXyZQyrrTPYn-RdGTjfpP5ZM1NxM9YAnBgcSYULukX_Yj7zclaE3tfXeSeacl3rFtWoBl1TxsPSc4NUbKnPH2k5yxvJfnFEltGLWywdFkaqvZrrDlPicRnTyQyQMMFFOkYiPdHR2EuM7ZSi1xeyiLzykzDNViqeCmydhz6ZkQpgaKoWVBZXwtYJvhgEwlXaApg48eKLTqxeY5FcpyH6y9dVJ_7lVrD5EfZftbgHi2Icgd_8w5mowfLv2xpXMdlQsp8Nj1YZ7lFkbFC6bO7JW5xYH9bIFrS7NElVr4Tm6Glk63Mk4ohlE9JRMIiiBEmtIWkgCcRokkLWxLu_d3-q5kciAPGeuQ-7tmjmfBTrGkdtizAMuE4-n2vww8w9vuR_OIgP4mqzmqeJxBJ6nqSPRRYnpAVbrWQCFSPlIfj3Om5zM1IT-UC35R_kZb-0dB_mCeMUPw3E7slKOnFTYsaD5VP52KjC5PjOxfpvkAtXt8FBwSe_ypmYD8DXh09PTgGqFn6iymoYLj8GL4zh1TUtPJSSVt_IeRVba0Mvs36S5CZKeevVrGlUfJKB8xqI8a5ZsdBj7Zg5gzflH8=w865-h649-s-no?authuser=0");
+            background-size: cover;
+            background-position: center;
+        }
+
         .container {
-            margin: 0 auto;
-            width: 600px;
-            border: 1px solid black;
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 15px;
+            padding: 15px;
             margin-top: 20px;
-            position: relative;
         }
 
-        .header .menu {
+        .menu {
             list-style: none;
-            display: flex;
-            float: right;
-            font-family: Georgia, 'Times New Roman', Times, serif;
-            font-weight: bolder;
-            position: relative;
-            top: -100px;
+            padding: 0;
+            text-align: center;
         }
 
-        .header .menu li {
-            width: 120px;
-            border: 1px solid;
+        .menu li {
+            display: inline-block;
+            margin: 5px;
+            padding: 15px 20px;
             border-radius: 10px;
-            padding: 10px;
             background-color: blanchedalmond;
+            font-weight: bold;
+            font-size: 1.3rem; /* Tăng cỡ chữ */
         }
 
-        .header .menu li:hover {
+        .menu li:hover {
             color: red;
             transition: 0.3s;
         }
 
-        .middle {
-            border: 1px solid;
-            padding: 4%;
-        }
-
         .walking {
-            display: inline-block;
-            font-size: 20px;
+            font-size: 22px;
             color: rgb(202, 187, 22);
-            position: relative;
-            margin-left: 5px;
-        }
-
-        .walking i:nth-child(1) {
-            animation: walk 0.5s infinite alternate;
-        }
-
-        .walking i:nth-child(2) {
-            animation: walk 0.5s infinite alternate 0.25s;
         }
 
         @keyframes walk {
-            0% { transform: translateY(0px) scale(1); opacity: 1; }
-            100% { transform: translateY(-5px) scale(1.1); opacity: 0.7; }
+            0% { transform: translateY(0px); opacity: 1; }
+            100% { transform: translateY(-5px); opacity: 0.7; }
         }
-        #iconhome {
-            color: aqua;
-        }
-        #iconhome:hover {
-            color: rgb(178, 133, 10);
+
+        .walking i:nth-child(1) { animation: walk 0.5s infinite alternate; }
+        .walking i:nth-child(2) { animation: walk 0.5s infinite alternate 0.25s; }
+
+        #iconhome { color: aqua; }
+        #iconhome:hover { color: rgb(178, 133, 10); }
+
+        /* Tăng kích thước chữ trên điện thoại */
+        @media (max-width: 768px) {
+            .menu li {
+                font-size: 1.5rem;
+                padding: 15px;
+            }
+
+            .d-block.font-weight-bold {
+                font-size: 1.4rem;
+            }
+
+            .walking {
+                font-size: 24px;
+            }
         }
     </style>
 </head>
 
 <body>
     <div class="container">
-        <div class="header">
-            <div class="logo">
-                <a href="Trangchu.html"><img width="150px" src="img/favicon.png" alt=""></a>
-            </div>
-            <ul class="menu">
-                <a href=""><li style="margin-right: 80px;">Trang chủ</li></a>
-                <a href="Diadiem.html"><li style="margin-right: 50px;">Kỷ Niệm</li></a>
-            </ul>
+        <div class="text-center my-3">
+            <a href="index.html">
+                <img src="img/favicon.png" width="120px" alt="Logo">
+            </a>
         </div>
 
-        <div class="middle">
-            <div class="row1">
-                <div class="col border rounded">
-                    <a href="">
-                        <img style="text-decoration: none;" src="../img/anhdannag.webp" class="w-50" alt="">
-                    </a>
-                    <a style="text-decoration: none; margin-left: 29px; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;"
-                        href="DaNang.html">
-                        Du lịch Đà Nẵng
-                    </a>
+        <ul class="menu d-flex justify-content-center">
+            <li><a href="index.html">Trang chủ</a></li>
+            <li><a href="Diadiem.html">Kỷ Niệm</a></li>
+        </ul>
+
+        <div class="row text-center">
+            <div class="col-12 mb-3">
+                <a href="DaNang.html">
+                    <img src="img/anhdannag.webp" class="w-75 rounded" alt="Đà Nẵng">
+                </a>
+                <div>
+                    <a href="DaNang.html" class="d-block font-weight-bold">Du lịch Đà Nẵng</a>
                     <span class="walking">
                         <i class="fa-solid fa-shoe-prints"></i>
                         <i class="fa-solid fa-shoe-prints"></i>
@@ -109,46 +109,33 @@
                 </div>
             </div>
 
-            <div class="row2">
-                <div class="col border rounded">
-                    <a style="text-decoration: none;" href="">
-                        <img src="../img/hinhanhhue.png" class="w-50" alt="">
-                    </a>
-                    <a style="margin-left: 29px; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;" href="">
-                        Du lịch Huế
-                    </a>
-                </div>
+            <div class="col-12 mb-3">
+                <a href="Hue.html">
+                    <img src="img/hinhanhhue.png" class="w-75 rounded" alt="Huế">
+                </a>
+                <a href="Hue.html" class="d-block font-weight-bold">Du lịch Huế</a>
             </div>
 
-            <div class="row3">
-                <div class="col border rounded">
-                    <a href="">
-                        <img src="../img/trovesg.PNG" class="w-50" alt="">
-                    </a>
-                    <a style="margin-left: 29px; font-weight: lighter; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; text-decoration: none;"
-                        href="">
-                        Trở về Sài Gòn
-                    </a>
-                    <span id="iconhome"><i class="fa fa-home" aria-hidden="true"></i></span>
-                </div>
+            <div class="col-12 mb-3">
+                <a href="#">
+                    <img src="img/trovesg.PNG" class="w-75 rounded" alt="Sài Gòn">
+                </a>
+                <a href="#" class="d-block font-weight-bold">Trở về Sài Gòn</a>
+                <span id="iconhome">
+                    <i class="fa fa-home"></i>
+                </span>
             </div>
         </div>
 
-        <div class="footer">
-            <div class="content"></div>
+        <div class="text-center my-3">
+            <p>&copy; 2025 Trang Chủ Cleanh</p>
         </div>
     </div>
 
     <!-- JavaScript -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 </body>
 
 </html>
