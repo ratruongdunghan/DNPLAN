@@ -1,0 +1,206 @@
+body {
+    background-image: url(https://lh3.googleusercontent.com/lrNVg6kGbiqDOGQW1cot7U4R6rFnHyObPGGtGzxrcZi4aOlKV8RqozI5jypsPrftHQ44DEuBBymJ3PoLeYMRvteuMvz1KjSR88-mxIBRb1oVA466JSvkks21lSmGqiYZXreCMjAvuLnvC1tEvH6n29qDpn8yho4ZwCN0OZHVTkV28jQnXba3j7EGDGxL9i-ke6QrXYiclsf0uVZ943gTlATnIsxYyzVcxVXNhJ52VkwBuytGPsOcq4dFJgkwPSnx4Vc0F3dPSYghhfCcLouSkfgD09WblCAGeaLmYkwsXBjtWLkwnKgWAIGo0YdA79RSLnvSNG62ZRXEgG0zvdPFAszXmgrNBKWL3y36BlSifGcEKeZzLnlMVcxR6USJEr0Zz4wH9d1AXyZQyrrTPYn-RdGTjfpP5ZM1NxM9YAnBgcSYULukX_Yj7zclaE3tfXeSeacl3rFtWoBl1TxsPSc4NUbKnPH2k5yxvJfnFEltGLWywdFkaqvZrrDlPicRnTyQyQMMFFOkYiPdHR2EuM7ZSi1xeyiLzykzDNViqeCmydhz6ZkQpgaKoWVBZXwtYJvhgEwlXaApg48eKLTqxeY5FcpyH6y9dVJ_7lVrD5EfZftbgHi2Icgd_8w5mowfLv2xpXMdlQsp8Nj1YZ7lFkbFC6bO7JW5xYH9bIFrS7NElVr4Tm6Glk63Mk4ohlE9JRMIiiBEmtIWkgCcRokkLWxLu_d3-q5kciAPGeuQ-7tmjmfBTrGkdtizAMuE4-n2vww8w9vuR_OIgP4mqzmqeJxBJ6nqSPRRYnpAVbrWQCFSPlIfj3Om5zM1IT-UC35R_kZb-0dB_mCeMUPw3E7slKOnFTYsaD5VP52KjC5PjOxfpvkAtXt8FBwSe_ypmYD8DXh09PTgGqFn6iymoYLj8GL4zh1TUtPJSSVt_IeRVba0Mvs36S5CZKeevVrGlUfJKB8xqI8a5ZsdBj7Zg5gzflH8=w865-h649-s-no?authuser=0);
+    background-size: cover;
+
+}
+
+
+.container {
+    margin: 3% auto;
+    max-width: 94%;
+    width: 100%;
+    height: 100%;
+    border-radius: 43px;
+    background-color: #fff;
+}
+
+.header .header-content .name-logo a.blue {
+    background-color: blue;
+    width: 44px;
+    height: 44px;
+    line-height: 44px;
+    color: #fff;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 28px;
+    text-decoration: none;
+    font-weight: 800;
+    margin-right: 8px;
+    margin-top: 4px;
+    float: left;
+}
+
+
+.logo-text a.text {
+    line-height: 50px;
+    text-decoration: none;
+    float: left;
+    color: black;
+    font-size: 20px;
+    font-weight: 600px;
+}
+
+
+.header .header-content {
+    padding: 4%;
+    width: calc(100% + 40px);
+    margin-left: -20px;
+}
+
+
+.header .header-content .menu {
+    margin-left: 50%;
+}
+
+
+.home-content .home-photo img {
+    border-radius: 50%;
+    height: 300px;
+    width: 300px;
+    margin: 5% 0;
+
+}
+
+
+.home-content .item {
+    font-size: 16px;
+    color: #aaa;
+    font-weight: 300px;
+    margin-bottom: 10px;
+}
+
+.home-content .text p {
+    font-size: 14px;
+    color: #666;
+    margin: 0 0 10px;
+
+}
+
+.home-content .home-button a {
+    transition: calc(.4s);
+}
+
+.home-content .home-button {
+    margin-bottom: 50px;
+    margin-left: 43%;
+    margin-top: 0 auto;
+}
+
+.row .title-me h2 {
+    font-size: 21px;
+    margin: 0 50px 30px;
+    display: inline-block;
+    position: relative;
+    padding-bottom: 7px;
+}
+
+.info-list .info-right {
+    margin-left: 100px;
+
+}
+
+.info-list {
+    box-sizing: border-box;
+    margin: 0 auto;
+    margin-left: 20px;
+    font-size: .92em;
+}
+
+
+.info-list .info .icon {
+    display: flex;
+    display: inline;
+}
+
+.info-left .info .icon .text {
+    display: inline;
+
+}
+
+.active .testimonial-content {
+    position: relative;
+    padding: 30px 20px 20px 60px;
+    background-color: pink;
+    border-radius: 8px;
+    border: 2px solid #e5e5e5;
+}
+
+.active .testimonial-picture img {
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    display: block;
+    top: -25px;
+    left: -25px;
+    border-radius: 80px;
+}
+
+.active .testimonial-item {
+    padding: 30px;
+    width: 50%;
+}
+
+.row .info-box {
+    max-width: 25%;
+    flex: 0 0 25%;
+    position: relative;
+    width: 100%
+}
+
+.row .info-box {
+    position: relative;
+    text-align: center;
+    width: 100%;
+    display: block;
+    margin: 0 0 15px;
+    background: #fff;
+    padding: 25px 10px 15px;
+    border: 2px solid #e5e5e5;
+    border-radius: 10px;
+    box-shadow: none;
+}
+
+.row .info-box {
+    transition: box-shadow 0.3s ease;
+}
+
+.row .info-box:hover {
+    box-shadow: 0 10px 7px 0 rgba(0, 0, 0, 0.6);
+}
+
+.row .info-box .value {
+    color: #d5d5d5;
+    font-size: 48px;
+    line-height: 52px;
+    display: block;
+    margin: 15px 0 10px;
+
+}
+
+.site-footer {
+    position: relative;
+    padding: 15px 45px;
+    background-color: #fdfdfd;
+    border-top: 2px solid #adabab;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    width: 100%;
+}
+
+.site-footer .footer-copyrights {
+    position: absolute;
+    right: 20px;
+    bottom: 1px;
+}
+
+.site-footer .footer-social ul li img {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    margin: 10px;
+}
+
+.site-footer .footer-social ul li {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
