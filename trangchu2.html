@@ -1,0 +1,610 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Võ Chí Linh | IUH Trường Đại Học Công Nghiệp Thành Phố Hồ Chí Minh</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <link rel="shortcut icon" href="/img/favicon.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="../bootstrap-4.6.2-dist/css/bootstrap.min.css">
+
+    <script src="../js/dk.js"></script>
+    <script src="../bootstrap-4.6.2-dist/js/bootstrap.bundle.js"></script>
+    <script src="../Javascript/jquery-3.6.0.js"></script>
+
+
+    <style>
+        #wrapper {
+            max-width: 1440px;
+            margin: 0 auto;
+        }
+
+        #backtop {
+            width: 50px;
+            height: 50px;
+            background-color: #007ced;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 10px;
+            position: fixed;
+            bottom: 40px;
+            right: 20px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="wrapper">
+
+        <h1>Countdown</h1>
+        <div id="countdown"></div>
+        <div class="container">
+            <div class="page-container">
+
+
+                <div class="header">
+                    <div class="header-content">
+
+
+                        <div class="name-logo">
+                            <div class="circle">
+                                <a href class=" blue">H</a>
+                                <div class="logo-text">
+                                    <a class="text" href="https://www.facebook.com/dinhle.honghoa">
+                                        <b>Hồng</b>
+                                        <span>Hoa</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="menu">
+
+                            <nav class="navbar navbar-expand-sm ">
+                                <ul class=" list-menu navbar-nav ">
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle text-secondary" href="#" id="dropdownId"
+                                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">About
+                                            Her</a>
+                                        <div class="dropdown-menu" aria-labelledby="dropdownId">
+                                            <a class="dropdown-item text-secondary" href="">About
+                                                Her </a>
+                                            <a class="dropdown-item text-secondary" href="">About
+                                                Her 2</a>
+                                        </div>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link text-secondary" href="">Resume</a>
+                                    </li>
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle text-secondary" href="#" id="dropdownId"
+                                            data-toggle="dropdown" aria-haspopup="true"
+                                            aria-expanded="false">Portfolio</a>
+                                        <div class="dropdown-menu text-secondary" aria-labelledby="dropdownId">
+                                            <a class="dropdown-item text-secondary" href="">Portfolio
+                                                2 Columns</a>
+                                            <a class="dropdown-item text-secondary" href="">Portfolio
+                                                3 Columns</a>
+                                            <a class="dropdown-item text-secondary" href="">Portfolio
+                                                4 Columns</a>
+                                            <a class="dropdown-item text-secondary" href="#">Portfolio 5 Columns</a>
+                                        </div>
+                                    </li>
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle text-secondary" href="#" id="dropdownId"
+                                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Blogs</a>
+                                        <div class="dropdown-menu" aria-labelledby="dropdownId">
+                                            <a class="dropdown-item" href="#">Blogs 2 Columns</a>
+                                            <a class="dropdown-item" href="#">Blogs 3 Columns</a>
+                                        </div>
+                                    </li>
+
+                                    <li class="nav-item">
+                                        <a class="nav-link text-secondary" href="">Contact</a>
+                                    </li>
+                                </ul>
+                                <div class="more-information" style="margin-left: 12px;">
+                                    <div class="login ">
+                                        <button class="img dropdown" type="img" data-toggle="dropdown"
+                                            aria-expanded="false">
+                                            <img style="border-radius: 50%; width: 30px; height: 30px;"
+                                                src="../img/hhoa2.JPG"
+                                                alt="">
+                                        </button>
+                                        <div class="dropdown-menu" style="width: 100%; border-radius: 10px;">
+                                            <a href="">
+
+                                                <img style="border-radius: 50%; width: 50px; height: 50px; margin-left: 20px;"
+                                                    src="../img/hhoa.JPG" alt="">
+                                            </a>
+                                            <a class="dropdown-item d-flex" href="#">
+                                                <h5>Hồng Hoa</h5>
+                                            </a>
+                                            <a class="dropdown-item text-white" href=""
+                                                style="height: 30px;width: 120px;background-color:#0190f3; border-radius: 5px; margin-left: 20px;">See
+                                                More...
+                                            </a>
+                                            <hr>
+                                            <div class="history d-block" style="width: 60%;">
+                                                <ul>
+                                                    <h6 style="color: grey;">
+                                                        My Planning
+                                                    </h6>
+                                                </ul>
+                                                <ul>
+                                                    <li class="list-unstyled">
+
+                                                        <a class="d-flex" href="">
+                                                            <img style="width: 100px; border-radius: 10px;"
+                                                                src="/img/anhvungtau.jpg" alt="">
+                                                            <p class=" d-inline font-weight-bold text-dark"
+                                                                style="font-size: 14px; ">
+                                                                Vũng tàu
+                                                            </p>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                                <ul>
+                                                    <li class="list-unstyled">
+                                                        <a class="d-flex" href="">
+                                                            <img style="width: 100px; border-radius: 10px;"
+                                                                src="../img/anhdannag.webp" alt="">
+                                                             <a href="./danang.html"></a><p class="d-inline font-weight-bold text-dark"
+                                                                style="font-size: 14px;">
+                                                                Đà nẵng
+                                                            </p>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                                <ul>
+                                                    <li class="list-unstyled">
+                                                        <a class="d-flex" href="">
+                                                            <img style="width: 100px; border-radius: 10px;"
+                                                                src="../img/anhphanthiet.jpg" alt="">
+                                                            <p class="d-inline font-weight-bold text-dark"
+                                                                style="font-size: 14px;">
+                                                                Phan Thiết
+                                                            </p>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                                <ul>
+                                                    <li class="list-unstyled">
+                                                        <a class="d-flex" href="">
+                                                            <img style="width:100px; border-radius: 10px;"
+                                                                src="../img/anhquynhon.jpg" alt="">
+                                                            <p class="d-inline font-weight-bold text-dark"
+                                                                style="font-size: 14px;">
+                                                                Quy Nhơn
+                                                            </p>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                                <ul>
+                                                    <li class="list-unstyled">
+                                                        <a class="d-flex" href="">
+                                                            <img style="width: 100px; border-radius: 10px;"
+                                                                src="../img/heli beer.jpg" alt="">
+                                                            <p class="d-inline font-weight-bold text-dark"
+                                                                style="font-size: 14px;">
+                                                                Heli Beer
+                                                            </p>
+                                                        </a>
+                                                    </li>
+
+                                                </ul>
+                                                <ul>
+                                            </div>
+                            </nav>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="home-content" style="margin-left: 20%;">
+                    <div class="row flex-v-align">
+                        <div class="col-sm-12 col-md-5 col-lg-5">
+
+                            <div class="home-photo">
+                                <div class="thumnail d-block mx-auto">
+                                    <img src="../img/hhoa3.JPG" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-5 col-lg-5">
+
+                            <div class="item">
+                                <h5>
+                                    Đinh Lê Hồng Hoa
+                                </h5>
+                            </div>
+                            <h1>
+                                Hồng Hoa
+                            </h1>
+
+                            <div class="text">
+                                <p>
+                                    Đinh Lê Hồng Hoa,
+
+                                  
+                                </p>
+                            </div>
+                        </div>
+                        <div class="home-button">
+                            <a name="" id="" class="btn btn-outline-primary text-secondary font-weight-bold mr-2"
+                                href="#" role="button" style="border-radius: 44px; height:40px; margin: auto;">
+                                Stop here
+                            </a>
+                            <a name="" id="" class="btn btn-outline-danger text-secondary font-weight-bold mx-auto"
+                                href="GUI_hhoa.html" role="button" style="border-radius: 44px;
+                height:40px; margin: auto;">
+                                See more...
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-sm-6">
+                    <div class="p-50" style="padding-top: 50px;"></div>
+                    <div class="title-me">
+                        <h2>
+                            Planning for her
+                        </h2>
+                    </div>
+                </div>
+            </div>
+            <div class="info-list">
+
+                <div class="col-xs-12 col-sm-12 d-flex">
+                    <div class="info-left ">
+
+                        <div class="info">
+                            <div class="icon">
+                                <i class="fa fa-pencil" aria-hidden="true"
+                                    style="color: rgb(252, 65, 65); font-size: 33px;"></i>
+                            </div>
+                        </div>
+                        <div class="text ">
+                            <h4>
+                                VungTau
+                            </h4>
+                            <p>
+                             Vũng Tàu, Ngày 28 Tháng 11 Năm 2024
+                            Dear my pookie🌻
+                            Chuyến du lịch đầu tiên của 2 đứa, khi mà cả 2 đều băng khoăn phải chọn một nơi để đi, quá nhiều nơi muốn đi qua cùng nhau,
+
+                            </p>
+                        </div>
+                        <div class="info ">
+                            <div class="icon">
+                                <i class="fa fa-television" aria-hidden="true"
+                                    style="color: #0190f3; font-size: 33px;"></i>
+                            </div>
+                        </div>
+                        <div class="text">
+                            <h4>
+                                PhanThiet
+                            </h4>
+                            <p>
+                            Địa điểm ở lại homestay :
+                            Cenhotel:
+                            ăn sáng: 
+                        
+                               
+                            
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="info-right d-inline">
+                        <div class="info">
+                            <div class="icon">
+                                <i class="fa fa-mixcloud" aria-hidden="true"
+                                    style="color: orange; font-size: 33px;"></i>
+                            </div>
+                        </div>
+                        <div class="text">
+                            <h4>
+                                DaNang
+                            </h4>
+                            <p>
+                                Địa điểm ở lại homestay : Căn hộ studio The Sóng - 28 thi sách
+                                Paris Homestay: 700k - 900k
+                               Cenhotel: 400k 2người (74A võ thị sáu, thắng tam tp vũng tàu) 
+                               CSJ Tower 169 thuỳ vân 
+                               
+                               ăn sáng: mì phì lũ (món người Hoa) : 366/9 trương công định
+                               Miến trộn nga 366/1 trương công định 
+                               
+                               Quán cafe:
+                               
+                               
+                               Ăn vặt: chè huế 372 trương công định p8
+                               hẻm ăn vặt: 132/21 nguyễn tri phương p7
+                               
+                               ăn trưa: 
+                               
+                               check in: 
+                               - Bãi trước 
+                               - Bãi sau
+                               - Ngọn hải đăng mini
+                               - Bạch dinh
+                               - Mũi nghinh phong
+                               - Bãi dâu
+                               - Nhà trắng hàn quốc
+                               - 
+                               
+                               Đi bảo tàng vũ khí Robert Taylor: 2 vé 140k
+                               Chi phí ăn uống:
+                            </p>
+                        </div>
+                        <div class="info">
+                            <div class="icon">
+                                <i class="fa fa-bullhorn" aria-hidden="true" style="color:#0190f3; font-size:33px;"></i>
+                            </div>
+                        </div>
+                        <div class="text">
+                            <h4>
+                                QuyNhon
+                            </h4>
+                            <p>
+                                Địa điểm ở lại homestay : Căn hộ studio The Sóng - 28 thi sách
+ Paris Homestay: 700k - 900k
+Cenhotel: 400k 2người (74A võ thị sáu, thắng tam tp vũng tàu) 
+CSJ Tower 169 thuỳ vân 
+
+ăn sáng: mì phì lũ (món người Hoa) : 366/9 trương công định
+Miến trộn nga 366/1 trương công định 
+
+Quán cafe:
+
+
+Ăn vặt: chè huế 372 trương công định p8
+hẻm ăn vặt: 132/21 nguyễn tri phương p7
+
+ăn trưa: 
+
+check in: 
+- Bãi trước 
+- Bãi sau
+- Ngọn hải đăng mini
+- Bạch dinh
+- Mũi nghinh phong
+- Bãi dâu
+- Nhà trắng hàn quốc
+- 
+
+Đi bảo tàng vũ khí Robert Taylor: 2 vé 140k
+Chi phí ăn uống:
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-sm-12">
+                    <div class="p-20" style="padding-top: 50px;"></div>
+                    <div class="title-me">
+                        <h2>
+                            Personer
+                        </h2>
+                    </div>
+
+                    <div class="active d-flex">
+
+                        <!--testimonial-item-->
+                        <div class="testimonial-item">
+
+                            <!--testimonial-content-->
+                            <div class="testimonial-content">
+
+                                <!--testimonial-picture-->
+
+                                <div class="testimonial-picture">
+                                    <a href="">
+
+                                        <img src="/img/hhoa5.JPG" alt="">
+                                    </a>
+                                </div>
+                                <div class="testimonial-text">
+                                    <p>
+                                       something here adssadaadadasdasdasdasd
+                                    </p>
+                                </div>
+                                <div class="testimonial-info">
+                                    <h5 class="testimonial-author" style="font-size: .92em; margin: 0 0 2px;
+                                    ">
+                                        Hồng Hoa
+                                    </h5>
+                                    <p class="testimonial-firm" style="margin: 0; font-size: .8em; color: #bbb;">
+                                        Đinh Lê Hồng Hoa
+                                    </p>
+                                    <div class="testimonial-icon">
+                                        <i class="fa fa-quote-left" aria-hidden="true" style="font-size:900;"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial-item">
+
+                            <!--testimonial-content-->
+                            <div class="testimonial-content">
+
+                                <!--testimonial-picture-->
+
+                                <div class="testimonial-picture">
+                                    <a href="">
+
+                                        <img src="/img/IMG_8385.JPG" alt="">
+                                    </a>
+                                </div>
+                                <div class="testimonial-text">
+                                    <p>
+                                        something here ffeffefefefe
+                                    </p>
+                                </div>
+                                <div class="testimonial-info">
+                                    <h5 class="testimonial-author" style="font-size: .92em; margin: 0 0 2px;
+                                    ">
+                                        Chí Linh
+                                    </h5>
+                                    <p class="testimonial-firm" style="margin: 0; font-size: .8em; color: #bbb;">
+                                        Võ Chí Linh
+                                    </p>
+                                    <div class="testimonial-icon">
+                                        <i class="fa fa-quote-left" aria-hidden="true" style="font-size:900;"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row ">
+                <div class="col-xs-12 col-sm-12">
+                    <div class="p-20" style="padding-top: 50px;"></div>
+                    <div class="title-me">
+                        <h2>
+                            Fun Facts
+                        </h2>
+                    </div>
+
+                    <div class="d-flex">
+
+                        <div class="info-box ">
+
+                            <div class="col-xs-12 col-sm-3">
+                                <div class="gray-defautl">
+                                    <i class="fa fa-heart-o" aria-hidden="true" style="    font-size: 33px;
+                                    color: #007ced;"></i>
+                                    <h4>
+                                        Happy Levels
+                                    </h4>
+                                    <span class="value">
+                                        50%
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="info-box">
+                            <div class="col-xs-12 col-sm-3">
+                                <div class="gray-defautl">
+                                    <i class="fa fa-clock-o" aria-hidden="true" style="font-size: 33px;
+                                    color: #007ced;"></i>
+                                    <h4>
+                                        Funny Levels
+                                    </h4>
+                                    <span class="value">
+                                        10%
+                                    </span>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="info-box">
+                            <div class="col-xs-12 col-sm-3">
+                                <div class="gray-defautl">
+                                    <i class="fa fa-star-o" aria-hidden="true" style="font-size: 33px;
+                                    color: #007ced;"></i>
+                                    <h4>
+                                        Lovely Levels
+                                    </h4>
+                                    <span class="value">
+                                        -1%
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="info-box ">
+                            <div class="col-xs-12 col-sm-3">
+                                <div class="gray-defautl">
+                                    <i class="fa fa-coffee" aria-hidden="true" style="font-size: 33px;
+                                    color: brown"></i>
+                                    <h4>
+                                        Coffee Consumed
+                                    </h4>
+                                    <span class="value">
+                                        1
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <footer class="site-footer clearfix d-flex">
+                <div class="footer-social">
+                    <ul class="footer-social-links list-unstyled d-flex">
+                        <li>
+                            <a class="text-dark" href="https://www.tiktok.com/@ratruongdunghan53" target="_blank">
+                                <img src="data:image/png;base64,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"
+                                    alt="">
+                                TikTok
+
+                            </a>
+                        </li>
+
+                        <li>
+                            <a class="text-dark" href="https://www.facebook.com/dinhle.honghoa" target="_blank">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/2021_Facebook_icon.svg/2048px-2021_Facebook_icon.svg.png"
+                                    alt="">
+                                Facebook</a>
+                        </li>
+
+                        <li>
+                            <a class="text-dark" href="https://www.instagram.com/hhoahh_/" target="_blank">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/2048px-Instagram_icon.png"
+                                    alt="">
+                                Instagram</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-copyrights">
+                    <p>© 30/6/2023 (Farewell).
+                    </p>
+                    <p>
+                        Võ Chí Linh 
+                    </p>
+                </div>
+            </footer>
+
+        </div>
+    </div>
+    </div>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+</body>
+
+<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+    crossorigin="anonymous"></script>
+
+</html>

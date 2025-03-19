@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Cleanh</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="shortcut icon" href="/img/favicon.png" type="image/x-icon">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <style>
+        .container {
+            margin: 0 auto;
+            width: 600px;
+            border: 1px solid black;
+            margin-top: 20px;
+            position: relative;
+        }
+
+        .header .menu {
+            list-style: none;
+            display: flex;
+            float: right;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-weight: bolder;
+            position: relative;
+            top: -100px;
+        }
+
+        .header .menu li {
+            width: 120px;
+            border: 1px solid;
+            border-radius: 10px;
+            padding: 10px;
+            background-color: blanchedalmond;
+        }
+
+        .header .menu li:hover {
+            color: red;
+            transition: 0.3s;
+        }
+
+        .middle {
+            border: 1px solid;
+            padding: 4%;
+        }
+
+        .walking {
+            display: inline-block;
+            font-size: 20px;
+            color: rgb(202, 187, 22);
+            position: relative;
+            margin-left: 5px;
+        }
+
+        .walking i:nth-child(1) {
+            animation: walk 0.5s infinite alternate;
+        }
+
+        .walking i:nth-child(2) {
+            animation: walk 0.5s infinite alternate 0.25s;
+        }
+
+        @keyframes walk {
+            0% { transform: translateY(0px) scale(1); opacity: 1; }
+            100% { transform: translateY(-5px) scale(1.1); opacity: 0.7; }
+        }
+        #iconhome {
+            color: aqua;
+        }
+        #iconhome:hover {
+            color: rgb(178, 133, 10);
+        }
+
+        
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="logo">
+                <a href="Trangchu.html"><img width="150px" src="../img/favicon.png" alt=""></a>
+            </div>
+            <ul class="menu">
+                <a href="Trangchu.html"><li style="margin-right: 80px;">Trang chủ</li></a>
+                <a href=""><li style="margin-right: 50px;">Kỷ Niệm</li></a>
+            </ul>
+        </div>
+
+        <div class="middle">
+            <div class="row1">
+                <div class="col border rounded">
+                    <a href="">
+                        <img style="text-decoration: none;" src="../img/anhdannag.webp" class="w-50" alt="">
+                    </a>
+                    <a style="text-decoration: none; margin-left: 25px; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;"
+                        href="">
+                        Đường đi tới homestay
+                    </a>
+                    <span class="walking">
+                        <i class="fa-solid fa-shoe-prints"></i>
+                        <i class="fa-solid fa-shoe-prints"></i>
+                    </span>
+                </div>
+            </div>
+            <div class="row1">
+                <div class="col border rounded">
+                    <a href="">
+                        <img style="text-decoration: none;" src="../img/hinhanhanuong.png" class="w-50" alt="">
+                    </a>
+                    <a style="text-decoration: none; margin-left: 25px; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;"
+                        href="">
+                        Ăn uống tại Đà Nẵng
+                    </a>
+                    <span class="walking">
+                        <i class="fa-solid fa-shoe-prints"></i>
+                        <i class="fa-solid fa-shoe-prints"></i>
+                    </span>
+                </div>
+            </div>
+            <div class="row1">
+                <div class="col border rounded">
+                    <a href="">
+                        <img style="text-decoration: none;" src="../img/anhdannag.webp" class="w-50" alt="">
+                    </a>
+                    <a style="text-decoration: none; margin-left: 20px; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;"
+                        href="">
+                        Địa điểm chụp hình cho hhoaa
+                    </a>
+                   <span><i class="fa fa-camera" aria-hidden="true"></i></span>
+                </div>
+            </div>
+
+           
+        </div>
+
+        <div class="footer">
+            <div class="content">
+                <h2 style="color: black; font-size: medium;">Chúc em có một chuyến du lịch vui vẻ </h2>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,241 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Giao diện </title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<style>
+    .container {}
+
+    .header {
+        height: 50px;
+        background-color: rgb(102, 102, 180);
+        width: 100%;
+    }
+
+    .header ul {
+        display: flex;
+        list-style: none;
+        padding: 12px;
+        margin: 0 auto;
+        width: 50%;
+
+    }
+
+    table {
+        border-collapse: collapse; /* Giảm khoảng cách giữa các ô */
+        margin: auto; /* Canh giữa bảng */
+    }
+
+    td {
+        width: 150px;  /* Đặt chiều rộng cho mỗi ô */
+        height: 190px; /* Đặt chiều cao cho mỗi ô */
+        border: 1px solid black; /* Đặt viền cho các ô */
+        text-align: center; /* Căn giữa nội dung */
+        transition: 0.3s ease;
+        position: relative; /* Đặt vị trí tương đối để sử dụng cho flipper */
+        overflow: hidden; /* Ẩn phần thừa của hình ảnh */
+    }
+
+    table td:hover {
+        transform: scale(1.2);
+    }
+
+    .flip_container {
+        perspective: 1000px; /* Tạo chiều sâu cho hiệu ứng lật */
+        width: 100%;
+        height: 100%;
+    }
+
+    .flipper {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        transition: transform 0.6s; /* Thời gian lật */
+        transform-style: preserve-3d; /* Giữ nguyên kiểu 3D */
+    }
+
+    .front, .back {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        backface-visibility: hidden; /* Ẩn mặt sau khi không hiển thị */
+    }
+
+    .front {
+        /* Tùy chỉnh cho mặt trước */
+    }
+
+    .back {
+        transform: rotateY(180deg); /* Lật mặt sau */
+        background-color: rgb(181, 174, 174); /* Màu nền cho mặt sau */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white; /* Màu chữ */
+        font-size: 13px; /* Kích thước chữ */
+    }
+
+    .flipped {
+        transform: rotateY(180deg); /* Lật ảnh khi nhấp chuột */
+    }
+</style>
+<body>
+<div class="container">
+    <div class="header">
+        <div class="menu">
+            <ul>
+                <li>Quay về trang chủ</li>
+                <li>Memory1</li>
+                <li>Memory2</li>
+                <li>Memory3</li>
+                <li>Memory4</li>
+            </ul>
+        </div>
+    </div>
+    <div class="body">
+        <table border="1">
+            <tr>
+                <td onclick="this.querySelector('.flipper').classList.toggle('flipped');">
+                    <div class="flip_container">
+                        <div class="flipper">
+                            <div class="front">
+                                <img width="100%" height="100%" src="../img/hhoa.JPG" alt="">
+                            </div>
+                            <div class="back">Đinh Lê Hồng Hoa</div>
+                        </div>
+                    </div>
+                </td>
+                <td onclick="this.querySelector('.flipper').classList.toggle('flipped');">
+                    <div class="flip_container">
+                        <div class="flipper">
+                            <div class="front">
+                                <img width="100%" height="100%" src="../img/hhoa2.JPG" alt="">
+                            </div>
+                            <div class="back">Mặt sau 2</div>
+                        </div>
+                    </div>
+                </td>
+                <td onclick="this.querySelector('.flipper').classList.toggle('flipped');">
+                    <div class="flip_container">
+                        <div class="flipper">
+                            <div class="front">
+                                <img width="100%" height="100%" src="../img/hhoa3.JPG" alt="">
+                            </div>
+                            <div class="back">Mặt sau 3</div>
+                        </div>
+                    </div>
+                </td>
+                <td onclick="this.querySelector('.flipper').classList.toggle('flipped');">
+                    <div class="flip_container">
+                        <div class="flipper">
+                            <div class="front">
+                                <img width="100%" height="100%" src="../img/hhoa4.JPG" alt="">
+                            </div>
+                            <div class="back">
+                                
+                            </div>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td onclick="this.querySelector('.flipper').classList.toggle('flipped');">
+                    <div class="flip_container">
+                        <div class="flipper">
+                            <div class="front">
+                                <img width="100%" height="100%" src="../img/hhoa5.JPG" alt="">
+                            </div>
+                            <div class="back">Mặt sau 5</div>
+                        </div>
+                    </div>
+                </td>
+                <td onclick="this.querySelector('.flipper').classList.toggle('flipped');">
+                    <div class="flip_container">
+                        <div class="flipper">
+                            <div class="front">
+                                <img width="100%" height="100%" src="../img/hhoa9.JPG" alt="">
+                            </div>
+                            <div class="back">Mặt sau 6</div>
+                        </div>
+                    </div>
+                </td>
+                <td onclick="this.querySelector('.flipper').classList.toggle('flipped');">
+                    <div class="flip_container">
+                        <div class="flipper">
+                            <div class="front">
+                                <img width="100%" height="100%" src="../img/hhoa7.JPG" alt="">
+                            </div>
+                            <div class="back">Mặt sau 7</div>
+                        </div>
+                    </div>
+                </td>
+                <td onclick="this.querySelector('.flipper').classList.toggle('flipped');">
+                    <div class="flip_container">
+                        <div class="flipper">
+                            <div class="front">
+                                <img width="100%" height="100%" src="../img/hhoa8.JPG" alt="">
+                            </div>
+                            <div class="back">Mặt sau 8</div>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td onclick="this.querySelector('.flipper').classList.toggle('flipped');">
+                    <div class="flip_container">
+                        <div class="flipper">
+                            <div class="front">
+                                <img width="100%" height="100%" src="../img/hhoa10.JPG" alt="">
+                            </div>
+                            <div class="back">Mặt sau 9</div>
+                        </div>
+                    </div>
+                </td>
+                <td onclick="this.querySelector('.flipper').classList.toggle('flipped');">
+                    <div class="flip_container">
+                        <div class="flipper">
+                            <div class="front">
+                                <img width="100%" height="100%" src="../img/hhoa11.JPG" alt="">
+                            </div>
+                            <div class="back">Mặt sau 10</div>
+                        </div>
+                    </div>
+                </td>
+                <td onclick="this.querySelector('.flipper').classList.toggle('flipped');">
+                    <div class="flip_container">
+                        <div class="flipper">
+                            <div class="front">
+                                <img width="100%" height="100%" src="../img/hhoa12.png" alt="">
+                            </div>
+                            <div class="back">Mặt sau 11</div>
+                        </div>
+                    </div>
+                </td>
+                <td onclick="this.querySelector('.flipper').classList.toggle('flipped');">
+                    <div class="flip_container">
+                        <div class="flipper">
+                            <div class="front">
+                                <img width="100%" height="100%" src="../img/hhoa13.JPG" alt="">
+                            </div>
+                            <div class="back">Mặt sau 12</div>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="footer"></div>
+    <video width="300" height="360" controls>
+        <source src="../video/IMG_4584.MOV" type="video/mp4">
+        Trình duyệt không hỗ trợ video.
+    </video>
+</div>
+
+<!-- Optional JavaScript -->
+<!-- jQuery
